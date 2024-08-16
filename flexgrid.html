@@ -5,20 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: white;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: wheat;
+        }
+
+
         .parent{
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
             /* gap: 10px; */
             column-gap: 7px;
             row-gap: 7px;
-            height: 1000px;   
+            height: 400px;   
+            width: 600px;
+
         }
         .parent div{
             background-color: aqua;
-            height: 500px;
-            font-size: 50px;
+            height: 300px;
+            font-size: 30px;
             place-items: center;
+            align-items: center;
             display: grid;
             border-radius: 7px;
             

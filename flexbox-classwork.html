@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: wheat;
+            background: wheat;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            /* display: grid; */
+        }
+        .parent{
+            background-color: blue;
+            background-color: purple;
+            color: black;
+            display: grid;
+            row-gap: 7px;
+            column-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            /* height: 300px;
+            width: 800px; */
+
+        }
+        .parent div{
+            background-color: black;
+            height: 100px;
+            /* width: 50px; */
+            place-items: center;
+            align-items: center;
+            display: grid;
+            color: black;
+        }
+        .parent div:nth-child(1){
+            background-color: plum;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-column: 1/3;
+            height: unset;
+        }
+        .parent div:nth-child(2){
+            background-color: skyblue;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-column: 4/5;
+            height: unset;
+        }
+        .parent div:nth-child(3){
+            background-color: brown;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-column: 3/4;
+            height: unset;
+            grid-row: 1/2;
+        }
+        .parent div:nth-child(4){
+            background-color: orange;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-row: 2/4;
+            height: unset;
+        }
+        .parent div:nth-child(5){
+            background-color: skyblue;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-row: 2/5;
+            height: unset;
+            grid-column: 2/3;
+        }
+        .parent div:nth-child(6){
+            background-color: plum;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-column: 3/5;
+            grid-row: 4/5;
+        }
+        .parent div:nth-child(7){
+            background-color: brown;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            grid-row: 4/5;
+            grid-column: 1/2;
+        }
+        .parent div:nth-child(8){
+            background-color: orange;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            /* grid-row: 4/5; */
+            /* grid-column: 1/2; */
+        }
+        .parent div:nth-child(9){
+            background-color: skyblue;
+            color: blanchedalmond;
+            height: unset;
+            color: black;
+            grid-row: 2/3;
+            /* grid-column: 1/2; */
+        }
+        .parent div:nth-child(10){
+            background-color: orange;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            /* grid-row: 4/5; */
+            /* grid-column: 1/2; */
+        }
+        .parent div:nth-child(11){
+            background-color: brown;
+            color: blanchedalmond;
+            height: 50px;
+            color: black;
+            /* grid-row: 4/5; */
+            /* grid-column: 1/2; */
+        }
+        Responsive styles for mobile
+        @media(max-width: 480px){
+            .flex-item{
+                flex:1 1 100%
+
+            }
+        }
+        Responsive styles for Tablet
+        @media (max-width: 480px) {
+            .container-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+       @media screen and (max-width: 480px) {
+            .container-grid {
+                grid-template-columns: 1fr;
+            }
+        
+       } 
+    </style>
+</head>
+<body>
+     <div class="parent">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div>
+        <div class="flex-item">11</div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #E0F1E7;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        form{
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 15px;
+            width: 90%;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            display: flex;
+        }
+        .flex{
+            display: flex;
+            gap: 15px;
+        }
+        .form-input{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+        }
+        .radio-input{
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+        textarea{
+            resize: none;
+            height: 100px;
+        }
+        button{
+            width: 100%;
+            color: #FFFFFF;
+            background-color: #0C7C68;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body >
+    <form action="" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <h1>Contact Us</h1>
+        <div class="flex">
+            <div class="form-input">
+                <label for="">First Name *</label>
+                <input type="text" placeholder="Enter your First Name">
+            </div>
+            <div class="form-input">
+                <label for="">Last Name *</label>
+                <input type="text" placeholder="Enter your last Name">
+            </div>    
+        </div>
+        <div class="form-input">
+            <label for="">Email Address *</label>
+            <input type="text" placeholder="Enter your Email">
+        </div>
+        <div class="radio-group">
+            <p>Query Type *</p><br>
+            <div class="flex">
+                <div class="radio-input">
+                    <input type="radio" name="true">
+                    <label for="">General Enquiry</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" name="true">
+                    <label for="">Support Request</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-input">
+            <label for="">Message *</label><br>
+            <textarea name="" id="" placeholder="Enter your name"></textarea>
+
+        </div>
+        <input type="checkbox" name="course">
+        <label for="checkbox" id="course">I consent to being contacted by the team *</label>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
